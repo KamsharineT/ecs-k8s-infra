@@ -15,3 +15,27 @@ The architecture includes:
 ---
 
 ## **Repository Structure**
+
+
+---
+
+## Prerequisites
+
+1. [Terraform](https://www.terraform.io/downloads.html) >= 1.5.0
+2. AWS CLI configured with credentials
+3. AWS account with permissions to create:
+   - VPC, Subnets, Security Groups
+   - ECS Cluster, ECS Service, Task Definition
+   - Application Load Balancer and Target Groups
+
+---
+
+## Setup AWS Credentials
+
+Terraform needs AWS credentials. You can provide them in one of the following ways:
+
+### Option 1: Environment Variables
+```bash
+export AWS_ACCESS_KEY_ID="YOUR_ACCESS_KEY_ID"
+export AWS_SECRET_ACCESS_KEY="YOUR_SECRET_ACCESS_KEY"
+export AWS_DEFAULT_REGION="ap-southeast-1"
